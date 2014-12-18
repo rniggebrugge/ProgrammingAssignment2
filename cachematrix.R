@@ -47,8 +47,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve receives a list object (as returned by the makeCacheMatrix) and calculates the inverse matrix
 ## of the matrix contained in this object. 
-## First the function will check if the inverse is already known, in which case this value is returned, along
-## with the message that a cached value is used.
+## First the function will check if the inverse is already known, in which case this value is returned, and
+## a message shown stating that a cached value is used.
 ## If no inverse is known (the $getinverse function in the input object's list returns a NULL value), 
 ## the inverse is calculated using solve(). Optional arguments to the solve() function can be passed to cacheSolve().
 ## The calculated inverse matrix is stored in the object sent as argument to the cachSolve function. This will
